@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ColorPicker.iml" filepath="$PROJECT_DIR$/ColorPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ColorPicker-app.iml" filepath="$PROJECT_DIR$/app/ColorPicker-app.iml" group="ColorPicker/app" />
+      <module fileurl="file://$PROJECT_DIR$/colorpicker/ColorPicker-colorpicker.iml" filepath="$PROJECT_DIR$/colorpicker/ColorPicker-colorpicker.iml" group="ColorPicker/colorpicker" />
+      <module fileurl="file://$PROJECT_DIR$/Projects-ColorPicker.iml" filepath="$PROJECT_DIR$/Projects-ColorPicker.iml" group="ColorPicker" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/colorpicker/colorpicker.iml" filepath="$PROJECT_DIR$/colorpicker/colorpicker.iml" />
     </modules>

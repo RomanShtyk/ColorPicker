@@ -3,9 +3,12 @@ package top.defaults.colorpicker;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Build;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.view.ViewOutlineProvider;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -77,7 +80,7 @@ public class ColorPickerView extends LinearLayout implements ColorObservable {
         if (brightnessSliderView != null) {
             desiredWidth -= (sliderMargin + sliderHeight);
         }
-        if (alphaSliderView != null){
+        if (alphaSliderView != null) {
             desiredWidth -= (sliderMargin + sliderHeight);
         }
 
@@ -157,7 +160,7 @@ public class ColorPickerView extends LinearLayout implements ColorObservable {
 
     private void updateObservableOnDuty() {
         if (observableOnDuty != null) {
-            for (ColorObserver observer: observers) {
+            for (ColorObserver observer : observers) {
                 observableOnDuty.unsubscribe(observer);
             }
         }
