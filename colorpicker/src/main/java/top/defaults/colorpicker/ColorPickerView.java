@@ -3,12 +3,9 @@ package top.defaults.colorpicker;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.os.Build;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import android.view.ViewOutlineProvider;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -50,7 +47,7 @@ public class ColorPickerView extends LinearLayout implements ColorObservable {
         colorWheelView = new ColorWheelView(context);
         float density = getResources().getDisplayMetrics().density;
         int margin = (int) (8 * density);
-        sliderMargin = 2 * margin;
+        sliderMargin = margin;
         sliderHeight = (int) (24 * density);
 
         LinearLayout.LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
